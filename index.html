@@ -16,42 +16,41 @@
     }
     body {
       border-top: solid 20px #981c21;
-      background: #d73939;
       font: 16px/1.2em normal "Lato", "Helvetica Neue", "Arial", sans-serif;
-      color: #fff;
       text-align: center;
+      color: #fff;
+      background: #d73939;
     }
     h1 {
-      margin: 1em 0 0.6em;
-      font-size: 6em;
+      margin: 1em 0 0;
+      font-size: 3em;
       text-shadow: -3px 10px rgba(0,0,0,0.2);
     }
     h2 {
-      font: 2.8em normal "Euphoria Script";
-      margin: 1.4em 0 -0.2em;
+      font: 2em normal "Euphoria Script";
+      margin: 1.2em 0 -0.2em;
     }
+
     ol.rules {
-      width: 290px;
+      width: 200px;
       margin: 0 auto 10px;
       padding: 1em 2.8em;
-      font-size: 0.9em;
+      font-size: 0.8em;
       color:#fff;
       background: #d73939;
       border-radius: 15px;
       box-shadow: 0 10px 0px 0 #981c21;
       list-style-position: inside;
-      text-indent: -1.6em;
-
+      text-indent: -1em;
     }
       ol.rules li {
         text-align:left;
         line-height: 1.2em;
         margin-bottom:0.5em;
-
       }
 
     ul {
-      margin:0;
+      margin:0 2em;
       padding:2em 0;
       background: #d73939 url('./stripe.gif') 50% repeat-y;
     }
@@ -59,6 +58,10 @@
         margin: 4em 0;
         padding: 0;
         list-style: none;
+      }
+      ul li p {
+        margin: 0.5em;
+        line-height: 1.2em;
       }
 
     a:link,
@@ -74,11 +77,6 @@
     }
     a.photo {
       border-bottom-style: none;
-    }
-
-    li p {
-      margin: 0.5em;
-      line-height: 1.2em;
     }
 
     time {
@@ -108,10 +106,34 @@
 
     footer {
       margin: 0;
-      padding:2em 0 4em;
+      padding:2em 4em 4em;
       background-color: #191919;
-      font-size: 0.8em;
+      font-size: 0.9em;
       color:#ccc;
+    }
+      footer a:link,
+      footer a:visited {
+        color: #981c21;
+        border-color: #981c21;
+      }
+      footer a:hover,
+      footer a:focus {
+        color: #fff;
+        border-color: #fff;
+      }
+
+    @media all and (min-width: 600px) {
+      h1 {
+        font-size: 6em;
+      }
+      h2 {
+        font-size: 2.8em;
+        margin: 1.4em 0 -0.2em;
+      }
+      ol.rules {
+        font-size: 0.9em;
+        width: 310px;
+      }
     }
 
   </style>
