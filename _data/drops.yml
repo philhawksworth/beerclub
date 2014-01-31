@@ -1,18 +1,18 @@
-- date: 2014-02-13 17:30:00 +0000
+- date: 2013-12-12 17:30:00 +0000
   beer: Black Sheep Ale
   brewery: "Black Sheep Brewery, North Yorkshire, UK"
   member: galvogalvo
   description: "Rich, smooth, northen and delcious"
   instagramUrl: http://instagram.com/p/h1FX9xSaVf
 
-- date: 2014-02-13 17:30:00 +0000
+- date: 2013-12-12 17:30:00 +0000
   beer: Golden Sheep
   brewery: "Black Sheep Brewery, North Yorkshire, UK"
   member: galvogalvo
   description: "Refreshing and light, but full of flavour"
   instagramUrl: http://instagram.com/p/h1FX9xSaVf
 
-- date: 2014-02-13 17:30:00 +0000
+- date: 2013-12-05 17:30:00 +0000
   beer: Old Peculier
   brewery: "Theakston Brewery, North Yorkshire, UK"
   member: philhawksworth
@@ -25,4 +25,11 @@
   member: rosslandles
   description: "Smooth dark IPA"
   instagramUrl: http://instagram.com/p/gI-v4jyafz
+
+- date: 2013-10-17 17:30:00 +0000
+  beer: Brooklyn Local 2
+  brewery: "Brooklyn Brewery, NY, USA"
+  member: andyhawkes
+  description: "Smooth dark IPA"
+  instagramUrl: http://instagram.com/p/fk15aeSafN
 
