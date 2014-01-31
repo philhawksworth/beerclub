@@ -1,0 +1,143 @@
+---
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>#beerclub</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,900&text=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ%2C.%22%3A%5B%5D()'rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Euphoria+Script&text=theruls' rel='stylesheet' type='text/css'>
+  <style>
+  
+    html, body {
+      margin: 0;
+      padding: 0;     
+    }
+    body {
+      border-top: solid 20px #981c21;
+      background: #d73939;
+      font: 16px/1.2em normal "Lato", "Helvetica Neue", "Arial", sans-serif;
+      color: #fff;
+      text-align: center;
+    }
+    h1 {
+      margin: 1em 0 0.6em;
+      font-size: 6em;
+      text-shadow: -3px 10px rgba(0,0,0,0.2);
+    }
+    h2 {
+      font: 2.8em normal "Euphoria Script";
+      margin: 1.4em 0 -0.2em;
+    }
+    ol.rules {
+      width: 290px;
+      margin: 0 auto 10px;
+      padding: 1em 2.8em;
+      font-size: 0.9em;
+      color:#fff;
+      background: #d73939;
+      border-radius: 15px;
+      box-shadow: 0 10px 0px 0 #981c21;
+      list-style-position: inside;
+      text-indent: -1.6em;
+
+    }
+      ol.rules li {
+        text-align:left;
+        line-height: 1.2em;
+        margin-bottom:0.5em;
+
+      }
+
+    ul {
+      margin:0;
+      padding:2em 0;
+      background: #d73939 url('./stripe.gif') 50% repeat-y;
+    }
+      ul li {
+        margin: 4em 0;
+        padding: 0;
+        list-style: none;
+      }
+
+    a:link,
+    a:visited {
+      color:#ff9ea9;
+      text-decoration: none;
+      padding-bottom: 0.3em;
+      border-bottom: solid 1px #ff9ea9;
+    }
+    a:hover,
+    a:focus {
+      color:#fff; 
+    }
+    a.photo {
+      border-bottom-style: none;
+    }
+
+    li p {
+      margin: 0.5em;
+      line-height: 1.2em;
+    }
+
+    time {
+      background: #fff;
+      color:#d73939;
+      padding:0.2em 0.5em;
+      margin:0.4em;
+      border-radius: 3px
+    }
+
+    .drop {
+      font-size: 1.4em;
+    }
+      .drop span {
+        color: #8b191f;
+      }
+
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 108px;
+      border: solid 2px #fff;
+      margin: 0 0 1em;
+      padding: 6px;
+      box-shadow: -10px 15px 0px 0 rgba(0,0,0,0.2);
+    }
+
+    footer {
+      margin: 0;
+      padding:2em 0 4em;
+      background-color: #191919;
+      font-size: 0.8em;
+      color:#ccc;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>#BEERCLUB</h1>
+  <h2>rules</h2>
+  <ol class="rules">
+    <li>You do not talk about beer club.</li>
+    <li>You can talk about beer club if you like. It's fine.</li>
+  </ol>
+  <ul>
+  {% for drop in site.data.drops %}
+    <li>
+      <a class="photo" href="{{ drop.instagramUrl }}">
+        <img src="{{ drop.instagramUrl }}/media/?size=t" />
+      </a>
+      <p><time datetime="{{ drop.date }}">{{ drop.date | date_to_string }}</time></p>
+      <p class="drop">{{ drop.beer }} <span>from</span> {{ drop.brewery }}</p>
+      <p>Brought to the club by <a class="member" href="http://twitter.com/{{ drop.member }}">@{{ drop.member }}</a></p>
+    </li>
+  {% endfor %}
+  </ul>
+  <footer>
+    <p>#beerclub takes place each thursday afternoon at <a href="http://rga.com">R/GA London</a></p>
+    <p>Update this site on <a href="http://github.com/philhawksworth/beerclub">Github</a></p>
+  </footer>
+</body>
+</html>
