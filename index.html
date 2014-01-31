@@ -26,7 +26,7 @@
     h1 {
       margin: 1em 0 0;
       font-size: 3em;
-      text-shadow: -3px 8px rgba(0,0,0,0.2);
+      text-shadow: -3px 7px rgba(0,0,0,0.2);
     }
     h2 {
       font: 2em normal "Euphoria Script";
@@ -77,8 +77,16 @@
     a:focus {
       color:#fff; 
     }
+
+      a.photo img {
+        background-color: #d73939;
+      }
+
     a.photo {
       border-bottom-style: none;
+    }
+    a.photo:hover img {
+      background-color: #981c21;
     }
 
     time {
@@ -142,12 +150,14 @@
   </style>
 </head>
 <body>
-  <h1>#BEERCLUB</h1>
-  <h2>rules</h2>
-  <ol class="rules">
-    <li>You do not talk about beer club.</li>
-    <li>You can talk about beer club if you like. It's fine.</li>
-  </ol>
+  <header>
+    <h1>#BEERCLUB</h1>
+    <h2>rules</h2>
+    <ol class="rules">
+      <li>You do not talk about beer club.</li>
+      <li>You can talk about beer club if you like. It's fine.</li>
+    </ol>
+  </header>
   <ul>
   {% for drop in site.data.drops %}
     <li>
