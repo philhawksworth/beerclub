@@ -33,6 +33,13 @@
   description: "A smooth dark IPA"
   instagramUrl: http://instagram.com/p/gI-v4jyafz
 
+- date: 2013-10-24 17:30:00 +0000
+  beer: Morpho Herbal Ale
+  brewery: "Cerveceria De Mateveza, San Francisco, USA"
+  member: peduarte
+  description: "Organic Ale brewed with yerba mate, hibiscus flowers & bay leaves. An acquired taste..."
+  instagramUrl: http://instagram.com/p/f22inVtTUP
+
 - date: 2013-10-17 17:30:00 +0000
   beer: Brooklyn Local 2
   brewery: "Brooklyn Brewery, NY, USA"
