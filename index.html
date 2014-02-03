@@ -161,7 +161,7 @@
   <ul>
   {% for drop in site.data.drops %}
     <li>
-      <a class="photo" href="{{ drop.instagramUrl }}">
+      <a class="photo" href="{{ drop.instagramUrl }}" id="{{ drop.beer | replace: ' ', '_' }}">
         <img src="{{ drop.instagramUrl }}/media/?size=t" />
       </a>
       <p><time datetime="{{ drop.date }}">{{ drop.date | date_to_string }}</time></p>
