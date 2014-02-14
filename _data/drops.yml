@@ -1,4 +1,11 @@
-- date: 2014-02-07 17:30:00 +0000
+- date: 2014-02-13 17:30:00 +0000
+  beer: Sublimely Self-righteous Ale
+  brewery: "Stone Brewery, CA, US"
+  member: "Zimon14"
+  description: "Powerful dark ale"
+  instagramUrl: http://instagram.com/p/kXXH8zNTWO
+
+- date: 2014-02-06 17:30:00 +0000
   beer: Voodoo Doughnut
   brewery: "Rogue Brewery, Ashland OR, US"
   member: ludvigsandstrom
