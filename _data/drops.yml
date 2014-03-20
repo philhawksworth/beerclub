@@ -1,4 +1,11 @@
 
+- data: 2014-03-20 17:30:00 +0000
+  beer: "Zinnebir & Taras Boulba"
+  brewery: "Brasserie de la Senne, Brussels, Belgium"
+  member: "djm_"
+  description: "Zinnebir: Malty bitterness; Taras: A refreshing character with a nose reminiscent of citrus."
+  instagramUrl: http://instagram.com/p/lxeR-7SaU2
+
 - date: 2014-03-13 17:30:00 +0000
   beer: "Sun Day & Dark Larger"
   brewery: "Brewers Union, South Africa"
@@ -19,7 +26,7 @@
   member: "Loopdream"
   description: "Malt beverage brewed with coffee beans and with natural flavours added"
   instagramUrl: http://instagram.com/p/kpYsMuSaaf
-  
+
 - date: 2014-02-13 17:30:00 +0000
   beer: Sublimely Self-righteous Ale
   brewery: "Stone Brewery, CA, US"
@@ -40,7 +47,7 @@
   member: paulcarvill
   description: "Rich, dark, espresso bass notes with a sweet nose and a nutty finish"
   instagramUrl: http://instagram.com/p/jzTfxLTf4e
-  
+
 - date: 2013-12-12 17:30:00 +0000
   beer: Black Sheep Ale
   brewery: "Black Sheep Brewery, North Yorkshire, UK"
