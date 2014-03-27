@@ -1,3 +1,9 @@
+- date: 2014-03-27 17:30:00 +0000
+  beer: "Original Colonies Mead"
+  brewery: "Rogue Brewery, Ashland OR, US"
+  member: "philhawksworth"
+  description: "Light citrus mead with notes of honey and champagne yeasts"
+  instagramUrl: http://instagram.com/p/mDlCm9yaS0
 
 - date: 2014-03-20 17:30:00 +0000
   beer: "Zinnebir & Taras Boulba"
@@ -15,7 +21,7 @@
 
 - date: 2014-03-06 17:30:00 +0000
   beer: Orange I.P.A
-  brewery: "Art Brew (Dorset, UK)"
+  brewery: "Art Brew, Dorset, UK"
   member: "a_alfredo"
   description: "Cloudy ale with a smooth orange taste"
   instagramUrl: http://instagram.com/p/lNbQmsNTZf
