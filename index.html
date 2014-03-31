@@ -135,15 +135,15 @@
       }
 
 			.ribbon {
-			 font-size: 16px !important;
+			 font-size: 12px !important;
 			 /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
 			 width: 100px;
 			 position: relative;
 			 background: white;
 			 color: #d73939;
 			 text-align: center;
-			 padding: 1em 2em; /* Adjust to suit */
-			 margin: 2em auto -1em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+			 padding: 1em 1em; /* Adjust to suit */
+			 margin: 2em auto 10em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 			 text-shadow: none;
 			}
 
@@ -201,7 +201,7 @@
       }
 
 			.ribbon {
-				width: 200px;
+				width: 150px;
 			}
 
     }
@@ -220,11 +220,6 @@
   <ul>
   {% for drop in site.data.drops %}
     <li>
-    	{% if drop.award %}
-    	<h1 class="ribbon">
-   			<strong class="ribbon-content">{{drop.award}}</strong>
-			</h1>
-			{% endif %}
       <a class="photo" href="{{ drop.instagramUrl }}" id="{{ drop.beer | replace: ' ', '_' }}">
         <img src="{{ drop.instagramUrl }}/media/?size=t" />
       </a>
@@ -232,6 +227,11 @@
       <p class="drop">{{ drop.beer }} <span>from</span> {{ drop.brewery }}</p>
       <p class="description">{{ drop.description }}</p>
       <p>Brought to the club by <a class="member" href="http://twitter.com/{{ drop.member }}">@{{ drop.member }}</a></p>
+      {% if drop.award %}
+    	<h1 class="ribbon">
+   			<strong class="ribbon-content">{{drop.award}}</strong>
+			</h1>
+			{% endif %}
     </li>
   {% endfor %}
   </ul>

@@ -11,6 +11,8 @@ Pull requests and contributions are welcome. The content is managed by Jekyll's 
 
 The images are all hosted on Instagram. Add a public Instagram page URL (without a trailing `/`) to the `_data/drops.yml` file in order to include the image in the site.
 
+You can now add an award for each bear you add on the website. Add a line in the [_data/drops.yml](_data/drops.yml) file like this : "award: your award here".
+
 ## Deployment
 
 The site is generated via Github's Jekyll support. Pushing code to the `gh-pages` branch will envoke a build and deployment.
