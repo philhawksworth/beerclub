@@ -11,10 +11,10 @@
   <link href='http://fonts.googleapis.com/css?family=Euphoria+Script&text=theruls' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-  
+
     html, body {
       margin: 0;
-      padding: 0;     
+      padding: 0;
     }
     body {
       border-top: solid 20px #981c21;
@@ -60,6 +60,8 @@
         margin: 4em 0;
         padding: 0;
         list-style: none;
+        position: relative;
+        z-index: 1;
       }
       ul li p {
         margin: 0.5em;
@@ -76,7 +78,7 @@
     }
     a:hover,
     a:focus {
-      color:#fff; 
+      color:#fff;
     }
       a.photo img {
         background-color: #d73939;
@@ -132,6 +134,58 @@
         border-color: #fff;
       }
 
+			.ribbon {
+			 font-size: 16px !important;
+			 /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+			 width: 100px;
+			 position: relative;
+			 background: white;
+			 color: #d73939;
+			 text-align: center;
+			 padding: 1em 2em; /* Adjust to suit */
+			 margin: 2em auto -1em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+			 text-shadow: none;
+			}
+
+			.ribbon:before, .ribbon:after {
+			 content: "";
+			 position: absolute;
+			 display: block;
+			 bottom: -1em;
+			 border: 1.5em solid #F5F5F5;
+			 z-index: -1;
+			}
+
+			.ribbon:before {
+			 left: -2em;
+			 border-right-width: 1.5em;
+			 border-left-color: transparent;
+			}
+
+			.ribbon:after {
+			 right: -2em;
+			 border-left-width: 1.5em;
+			 border-right-color: transparent;
+			}
+
+			.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+			 content: "";
+			 position: absolute;
+			 display: block;
+			 border-style: solid;
+			 border-color: gray transparent transparent transparent;
+			 bottom: -1em;
+			}
+			.ribbon .ribbon-content:before {
+			 left: 0;
+			 border-width: 1em 0 0 1em;
+			}
+			.ribbon .ribbon-content:after {
+			 right: 0;
+			 border-width: 1em 1em 0 0;
+			}
+
+
     @media all and (min-width: 600px) {
       h1 {
         font-size: 6em;
@@ -145,6 +199,11 @@
         font-size: 0.9em;
         width: 310px;
       }
+
+			.ribbon {
+				width: 200px;
+			}
+
     }
 
   </style>
@@ -161,6 +220,11 @@
   <ul>
   {% for drop in site.data.drops %}
     <li>
+    	{% if drop.award %}
+    	<h1 class="ribbon">
+   			<strong class="ribbon-content">{{drop.award}}</strong>
+			</h1>
+			{% endif %}
       <a class="photo" href="{{ drop.instagramUrl }}" id="{{ drop.beer | replace: ' ', '_' }}">
         <img src="{{ drop.instagramUrl }}/media/?size=t" />
       </a>

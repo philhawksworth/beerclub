@@ -4,6 +4,7 @@
   member: "philhawksworth"
   description: "Light citrus mead with notes of honey and champagne yeasts"
   instagramUrl: http://instagram.com/p/mDlCm9yaS0
+  award: "Best flavour"
 
 - date: 2014-03-20 17:30:00 +0000
   beer: "Zinnebir & Taras Boulba"
@@ -18,6 +19,7 @@
   member: "grantygrant"
   description: "Crisp, subtly citrus and refreshing, And smooth yet punchy"
   instagramUrl: http://instagram.com/p/lfcrahSaQc
+  award: "Amazing package"
 
 - date: 2014-03-06 17:30:00 +0000
   beer: Orange I.P.A
@@ -39,6 +41,7 @@
   member: "Zimon14"
   description: "Powerful dark ale"
   instagramUrl: http://instagram.com/p/kXXH8zNTWO
+  award: "Worst beer"
 
 - date: 2014-02-06 17:30:00 +0000
   beer: Voodoo Doughnut
