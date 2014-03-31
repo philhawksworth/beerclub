@@ -142,7 +142,7 @@
 			 color: #d73939;
 			 text-align: center;
 			 padding: 1em 1em; /* Adjust to suit */
-			 margin: 2em auto 2em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+			 margin: 2em auto .4em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 			}
 
 			.ribbon:before, .ribbon:after {
@@ -218,6 +218,11 @@
   <ul>
   {% for drop in site.data.drops %}
     <li>
+    	{% if drop.award %}
+    	<p class="ribbon">
+   			<span class="ribbon-content">{{drop.award}}</span>
+			</p>
+			{% endif %}
       <a class="photo" href="{{ drop.instagramUrl }}" id="{{ drop.beer | replace: ' ', '_' }}">
         <img src="{{ drop.instagramUrl }}/media/?size=t" />
       </a>
@@ -225,11 +230,6 @@
       <p class="drop">{{ drop.beer }} <span>from</span> {{ drop.brewery }}</p>
       <p class="description">{{ drop.description }}</p>
       <p>Brought to the club by <a class="member" href="http://twitter.com/{{ drop.member }}">@{{ drop.member }}</a></p>
-      {% if drop.award %}
-    	<p class="ribbon">
-   			<span class="ribbon-content">{{drop.award}}</span>
-			</p>
-			{% endif %}
     </li>
   {% endfor %}
   </ul>
