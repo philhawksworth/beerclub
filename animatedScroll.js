@@ -32,20 +32,28 @@ var win = $(window);
 
 var allMods = $(".module");
 
-allMods.each(function(i, el) {
-  var el = $(el);
-  if (el.visible(true)) {
-    el.addClass("already-visible");
-  }
-});
+var isTouch = function() {
+	return ('ontouchstart' in window || window.DocumentTouch && document instanceof DocumentTouch);
+};
 
-win.scroll(function(event) {
+if(!isTouch()) {
 
-  allMods.each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      el.addClass("come-in");
-    }
-  });
+	allMods.each(function(i, el) {
+	  var el = $(el);
+	  if (el.visible(true)) {
+	    el.addClass("already-visible");
+	  }
+	});
 
-});
+	win.scroll(function(event) {
+
+	  allMods.each(function(i, el) {
+	    var el = $(el);
+	    if (el.visible(true)) {
+	      el.addClass("come-in");
+	    }
+	  });
+
+	});
+
+}
