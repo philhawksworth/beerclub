@@ -183,6 +183,24 @@
 			 border-width: 1em 1em 0 0;
 			}
 
+			.come-in {
+			  -webkit-transform: translateY(150px);
+			  -webkit-animation: come-in 0.8s ease forwards;
+			}
+
+			.already-visible {
+			  -webkit-transform: translateY(0);
+			  -webkit-animation: none;
+			}
+
+			@-webkit-keyframes come-in {
+			  to { -webkit-transform: translateY(0); }
+			}
+
+			@keyframes come-in {
+			  to { -webkit-transform: translateY(0); }
+			}
+
 
     @media all and (min-width: 600px) {
       h1 {
@@ -202,6 +220,8 @@
 				width: 150px;
 			}
 
+
+
     }
 
   </style>
@@ -217,7 +237,7 @@
   </header>
   <ul>
   {% for drop in site.data.drops %}
-    <li>
+    <li class="module">
     	{% if drop.award %}
     	<p class="ribbon">
    			<span class="ribbon-content">{{drop.award}}</span>
@@ -237,5 +257,9 @@
     <p>#beerclub takes place each thursday afternoon at <a href="http://rga.com">R/GA London</a></p>
     <p>Update this site on <a href="https://github.com/philhawksworth/beerclub/blob/gh-pages/_data/drops.yml">Github</a></p>
   </footer>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="animatedScroll.js"></script>
+
 </body>
 </html>
