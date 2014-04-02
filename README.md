@@ -11,7 +11,7 @@ Pull requests and contributions are welcome. The content is managed by Jekyll's 
 
 The images are all hosted on Instagram. Add a public Instagram page URL (without a trailing `/`) to the `_data/drops.yml` file in order to include the image in the site.
 
-You can now add an award for each bear you add on the website. Add a line in the [_data/drops.yml](_data/drops.yml) file like this: 
+You can now add an award for each beer you add on the website. Add a line in the [_data/drops.yml](_data/drops.yml) file like this: 
 
 `award: "text of your award here"`
 
