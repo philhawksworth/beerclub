@@ -1,20 +1,107 @@
-- date: 2014-02-13 09:00:00 +0000
+- date: 2014-03-27 17:30:00 +0000
+  beer: "Original Colonies Mead"
+  brewery: "Rogue Brewery, Ashland OR, US"
+  member: "philhawksworth"
+  description: "Light citrus mead with notes of honey and champagne yeasts"
+  instagramUrl: http://instagram.com/p/mDlCm9yaS0
+  award: "Best flavour"
+
+- date: 2014-03-20 17:30:00 +0000
+  beer: "Zinnebir & Taras Boulba"
+  brewery: "Brasserie de la Senne, Brussels, Belgium"
+  member: "djm_"
+  description: "Zinnebir: Malty bitterness; Taras: A refreshing character with a nose reminiscent of citrus."
+  instagramUrl: http://instagram.com/p/lxeR-7SaU2
+
+- date: 2014-03-13 17:30:00 +0000
+  beer: "Sun Day & Dark Larger"
+  brewery: "Brewers Union, South Africa"
+  member: "grantygrant"
+  description: "Crisp, subtly citrus and refreshing, And smooth yet punchy"
+  instagramUrl: http://instagram.com/p/lfcrahSaQc
+  award: "Amazing package"
+
+- date: 2014-03-06 17:30:00 +0000
+  beer: Orange I.P.A
+  brewery: "Art Brew, Dorset, UK"
+  member: "a_alfredo"
+  description: "Cloudy ale with a smooth orange taste"
+  instagramUrl: http://instagram.com/p/lNbQmsNTZf
+
+- date: 2014-02-20 17:30:00 +0000
+  beer: Imperial Biscotti Break
+  brewery: "Evil Twin (Westbrook Brewing Co.), SC, US"
+  member: "Loopdream"
+  description: "Malt beverage brewed with coffee beans and with natural flavours added"
+  instagramUrl: http://instagram.com/p/kpYsMuSaaf
+
+- date: 2014-02-13 17:30:00 +0000
+  beer: Sublimely Self-righteous Ale
+  brewery: "Stone Brewery, CA, US"
+  member: "Zimon14"
+  description: "Powerful dark ale"
+  instagramUrl: http://instagram.com/p/kXXH8zNTWO
+  award: "Worst beer"
+
+- date: 2014-02-06 17:30:00 +0000
+  beer: Voodoo Doughnut
+  brewery: "Rogue Brewery, Ashland OR, US"
+  member: ludvigsandstrom
+  description: "Chocolate, Peanut butter & Banana Ale"
+  instagramUrl: http://instagram.com/p/kFUqP1M5Vm
+
+- date: 2014-01-30 17:30:00 +0000
+  beer: Genghis Pecan
+  brewery: "Clown Shoes, Ipswich, MA, United States"
+  member: paulcarvill
+  description: "Rich, dark, espresso bass notes with a sweet nose and a nutty finish"
+  instagramUrl: http://instagram.com/p/jzTfxLTf4e
+
+- date: 2013-12-12 17:30:00 +0000
   beer: Black Sheep Ale
   brewery: "Black Sheep Brewery, North Yorkshire, UK"
   member: galvogalvo
   description: "Rich, smooth, northen and delcious"
   instagramUrl: http://instagram.com/p/h1FX9xSaVf
 
-- date: 2014-02-13 09:00:00 +0000
+- date: 2013-12-12 17:30:00 +0000
   beer: Golden Sheep
   brewery: "Black Sheep Brewery, North Yorkshire, UK"
   member: galvogalvo
   description: "Refreshing and light, but full of flavour"
   instagramUrl: http://instagram.com/p/h1FX9xSaVf
 
-- date: 2014-02-13 09:00:00 +0000
+- date: 2013-12-05 17:30:00 +0000
   beer: Old Peculier
   brewery: "Theakston Brewery, North Yorkshire, UK"
   member: philhawksworth
-  description: "Rich, smooth, northen and delcious"
+  description: "Rich, smooth, northen and delicious"
   instagramUrl: http://instagram.com/p/hjHornyaQC
+
+- date: 2013-10-31 17:30:00 +0000
+  beer: Dark Element
+  brewery: "Element Brewing Company, Massachusetts, USA"
+  member: rosslandles
+  description: "A smooth dark IPA"
+  instagramUrl: http://instagram.com/p/gI-v4jyafz
+
+- date: 2013-10-24 17:30:00 +0000
+  beer: Morpho Herbal Ale
+  brewery: "Cerveceria De Mateveza, San Francisco, USA"
+  member: peduarte
+  description: "Organic Ale brewed with yerba mate, hibiscus flowers & bay leaves. An acquired taste..."
+  instagramUrl: http://instagram.com/p/f22inVtTUP
+
+- date: 2013-10-17 17:30:00 +0000
+  beer: Brooklyn Local 2
+  brewery: "Brooklyn Brewery, NY, USA"
+  member: andyhawkes
+  description: "A Belgian style, dark, strong abbey ale"
+  instagramUrl: http://instagram.com/p/fk15aeSafN
+
+- date: 2013-10-10 17:30:00 +0000
+  beer: Aecht Schlenkerla Rauchbier
+  brewery: "Schlenkerla, Germany"
+  member: andyshora
+  description: "Malty and smokey from beech-wood logs"
+  instagramUrl: http://instagram.com/p/fk07SqTf2U

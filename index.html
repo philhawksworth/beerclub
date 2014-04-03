@@ -5,14 +5,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>beerclub</title>
+  <title>#beerclub</title>
+  <meta >
   <link href='http://fonts.googleapis.com/css?family=Lato:300,900&text=abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ%2C.%22%3A%5B%5D()'rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Euphoria+Script&text=rules' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Euphoria+Script&text=theruls' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-  
+
     html, body {
       margin: 0;
-      padding: 0;     
+      padding: 0;
     }
     body {
       border-top: solid 20px #981c21;
@@ -24,7 +26,7 @@
     h1 {
       margin: 1em 0 0;
       font-size: 3em;
-      text-shadow: -3px 10px rgba(0,0,0,0.2);
+      text-shadow: -3px 7px rgba(0,0,0,0.2);
     }
     h2 {
       font: 2em normal "Euphoria Script";
@@ -39,7 +41,7 @@
       color:#fff;
       background: #d73939;
       border-radius: 15px;
-      box-shadow: 0 10px 0px 0 #981c21;
+      box-shadow: 0 10px 0 0 #981c21;
       list-style-position: inside;
       text-indent: -1em;
     }
@@ -58,6 +60,8 @@
         margin: 4em 0;
         padding: 0;
         list-style: none;
+        position: relative;
+        z-index: 1;
       }
       ul li p {
         margin: 0.5em;
@@ -67,16 +71,24 @@
     a:link,
     a:visited {
       color:#ff9ea9;
+      color:#ff8f8c;
       text-decoration: none;
       padding-bottom: 0.3em;
-      border-bottom: solid 1px #ff9ea9;
+      border-bottom: solid 1px #ff8f8c;
     }
     a:hover,
     a:focus {
-      color:#fff; 
+      color:#fff;
     }
+      a.photo img {
+        background-color: #d73939;
+      }
+
     a.photo {
       border-bottom-style: none;
+    }
+    a.photo:hover img {
+      background-color: #981c21;
     }
 
     time {
@@ -113,8 +125,8 @@
     }
       footer a:link,
       footer a:visited {
-        color: #ca4a4c;
-        border-color: #ca4a4c;
+        color: #981c21;
+        border-color: #981c21;
       }
       footer a:hover,
       footer a:focus {
@@ -122,9 +134,80 @@
         border-color: #fff;
       }
 
+			.ribbon {
+			 /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
+			 width: 100px;
+			 position: relative;
+			 background: white;
+			 color: #d73939;
+			 text-align: center;
+			 padding: 1em 1em; /* Adjust to suit */
+			 margin: 2em auto .4em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+			}
+
+			.ribbon:before, .ribbon:after {
+			 content: "";
+			 position: absolute;
+			 display: block;
+			 bottom: -1em;
+			 border: 1.5em solid #F5F5F5;
+			 z-index: -1;
+			}
+
+			.ribbon:before {
+			 left: -2em;
+			 border-right-width: 1.5em;
+			 border-left-color: transparent;
+			}
+
+			.ribbon:after {
+			 right: -2em;
+			 border-left-width: 1.5em;
+			 border-right-color: transparent;
+			}
+
+			.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+			 content: "";
+			 position: absolute;
+			 display: block;
+			 border-style: solid;
+			 border-color: gray transparent transparent transparent;
+			 bottom: -1em;
+			}
+			.ribbon .ribbon-content:before {
+			 left: 0;
+			 border-width: 1em 0 0 1em;
+			}
+			.ribbon .ribbon-content:after {
+			 right: 0;
+			 border-width: 1em 1em 0 0;
+			}
+
+			.come-in {
+			  -webkit-transform: translateY(150px);
+			  				transform: translateY(150px);
+			  -webkit-animation: come-in 0.8s ease forwards;
+			  				animation: come-in 0.8s ease forwards;
+			}
+
+			.already-visible {
+			  -webkit-transform: translateY(0);
+			  -webkit-animation: none;
+			}
+
+			@-webkit-keyframes come-in {
+			  to { -webkit-transform: translateY(0); }
+			}
+
+			@keyframes come-in {
+			  to { -webkit-transform: translateY(0); }
+			}
+
+
     @media all and (min-width: 600px) {
       h1 {
         font-size: 6em;
+        text-shadow: -3px 10px rgba(0,0,0,0.2);
       }
       h2 {
         font-size: 2.8em;
@@ -134,32 +217,51 @@
         font-size: 0.9em;
         width: 310px;
       }
+
+			.ribbon {
+				width: 150px;
+			}
+
+
+
     }
 
   </style>
 </head>
 <body>
-  <h1>#BEERCLUB</h1>
-  <h2>rules</h2>
-  <ol class="rules">
-    <li>You do not talk about beer club.</li>
-    <li>You can talk about beer club if you like. It's fine.</li>
-  </ol>
+  <header>
+    <h1>#BEERCLUB</h1>
+    <h2>rules</h2>
+    <ol class="rules">
+      <li>You do not talk about beer club.</li>
+      <li>You can talk about beer club if you like. It's fine.</li>
+    </ol>
+  </header>
   <ul>
   {% for drop in site.data.drops %}
-    <li>
-      <a class="photo" href="{{ drop.instagramUrl }}">
+    <li class="module">
+    	{% if drop.award %}
+    	<p class="ribbon">
+   			<span class="ribbon-content">{{drop.award}}</span>
+			</p>
+			{% endif %}
+      <a class="photo" href="{{ drop.instagramUrl }}" id="{{ drop.beer | replace: ' ', '_' }}">
         <img src="{{ drop.instagramUrl }}/media/?size=t" />
       </a>
       <p><time datetime="{{ drop.date }}">{{ drop.date | date_to_string }}</time></p>
       <p class="drop">{{ drop.beer }} <span>from</span> {{ drop.brewery }}</p>
+      <p class="description">{{ drop.description }}</p>
       <p>Brought to the club by <a class="member" href="http://twitter.com/{{ drop.member }}">@{{ drop.member }}</a></p>
     </li>
   {% endfor %}
   </ul>
   <footer>
     <p>#beerclub takes place each thursday afternoon at <a href="http://rga.com">R/GA London</a></p>
-    <p>Update this site on <a href="http://github.com/philhawksworth/beerclub">Github</a></p>
+    <p>Update this site on <a href="https://github.com/philhawksworth/beerclub/blob/gh-pages/_data/drops.yml">Github</a></p>
   </footer>
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="animatedScroll.js"></script>
+
 </body>
 </html>
