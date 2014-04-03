@@ -136,20 +136,23 @@
 
 			.ribbon {
 			 /* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-			 width: 100px;
+			 width: 120px;
 			 position: relative;
 			 background: white;
+			 font-size: .8em;
 			 color: #d73939;
 			 text-align: center;
 			 padding: 1em 1em; /* Adjust to suit */
-			 margin: 2em auto .4em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+			 margin: -3em auto 2em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+			 /*-webkit-transform: translateY(0);
+			 -webkit-transition: -webkit-transform .3s ease-in-out;*/
 			}
 
 			.ribbon:before, .ribbon:after {
 			 content: "";
 			 position: absolute;
 			 display: block;
-			 bottom: -1em;
+			 top: -1em;
 			 border: 1.5em solid #F5F5F5;
 			 z-index: -1;
 			}
@@ -166,22 +169,30 @@
 			 border-right-color: transparent;
 			}
 
+			.ribbon-content {
+				-webkit-transform-style: preserve-3d;
+			}
+
 			.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
 			 content: "";
 			 position: absolute;
 			 display: block;
 			 border-style: solid;
-			 border-color: gray transparent transparent transparent;
-			 bottom: -1em;
+			 border-color: transparent transparent gray transparent;
+			 top: -1em;
 			}
 			.ribbon .ribbon-content:before {
 			 left: 0;
-			 border-width: 1em 0 0 1em;
+			 border-width: 0 0 1em 1em;
 			}
 			.ribbon .ribbon-content:after {
 			 right: 0;
-			 border-width: 1em 1em 0 0;
+			 border-width: 0 1em 1em 0;
 			}
+
+			/*a.photo:hover ~ .ribbon {
+				-webkit-transform: translateY(1em);
+			}*/
 
 			.come-in {
 			  -webkit-transform: translateY(150px);
@@ -219,10 +230,9 @@
       }
 
 			.ribbon {
+				font-size: 1em;
 				width: 150px;
 			}
-
-
 
     }
 
@@ -240,14 +250,14 @@
   <ul>
   {% for drop in site.data.drops %}
     <li class="module">
-    	{% if drop.award %}
+      <a class="photo" href="{{ drop.instagramUrl }}" id="{{ drop.beer | replace: ' ', '_' }}">
+        <img src="{{ drop.instagramUrl }}/media/?size=t" />
+      </a>
+      {% if drop.award %}
     	<p class="ribbon">
    			<span class="ribbon-content">{{drop.award}}</span>
 			</p>
 			{% endif %}
-      <a class="photo" href="{{ drop.instagramUrl }}" id="{{ drop.beer | replace: ' ', '_' }}">
-        <img src="{{ drop.instagramUrl }}/media/?size=t" />
-      </a>
       <p><time datetime="{{ drop.date }}">{{ drop.date | date_to_string }}</time></p>
       <p class="drop">{{ drop.beer }} <span>from</span> {{ drop.brewery }}</p>
       <p class="description">{{ drop.description }}</p>
