@@ -86,16 +86,20 @@
 
     a.photo {
       border-bottom-style: none;
+      display: inline-block;
     }
     a.photo:hover img {
       background-color: #981c21;
     }
 
+		.date-wrapper {
+			margin: 0 0 20px;
+		}
+
     time {
       background: #fff;
       color:#d73939;
       padding:0.2em 0.5em;
-      margin:0.4em;
       border-radius: 3px
     }
 
@@ -138,7 +142,7 @@
 				-webkit-transition: -webkit-transform .3s ease-in-out;
 			}
 
-			.ribbon-wrapper>span {
+			.ribbon-wrapper > span {
 				 width: 100px;
 				 position: relative;
 				 display: block;
@@ -152,7 +156,8 @@
 				 margin: -10px auto 50px;
 			}
 
-			.ribbon-wrapper>span:before, .ribbon-wrapper>span:after {
+			.ribbon-wrapper > span:before,
+			.ribbon-wrapper > span:after {
 				 content: "";
 				 position: absolute;
 				 display: block;
@@ -162,19 +167,20 @@
 				 -webkit-transform: translateZ(-1px);
 			}
 
-			.ribbon-wrapper>span:before {
+			.ribbon-wrapper > span:before {
 			 left: -30px;
 			 border-right-width: 20px;
 			 border-left-color: transparent;
 			}
 
-			.ribbon-wrapper>span:after {
+			.ribbon-wrapper > span:after {
 			 right: -30px;
 			 border-left-width: 20px;
 			 border-right-color: transparent;
 			}
 
-			.ribbon-wrapper>span span:before, .ribbon-wrapper>span span:after {
+			.ribbon-wrapper > span span:before,
+			.ribbon-wrapper > span span:after {
 			 content: "";
 			 position: absolute;
 			 display: block;
@@ -182,18 +188,20 @@
 			 border-color: transparent transparent gray transparent;
 			 top: -10px;
 			}
-			.ribbon-wrapper>span span:before {
+			.ribbon-wrapper > span span:before {
 			 left: 0;
 			 border-width: 0 0 10px 10px;
 			}
-			.ribbon-wrapper>span span:after {
+			.ribbon-wrapper > span span:after {
 			 right: 0;
 			 border-width: 0 10px 10px 0;
 			}
 
-			a.photo:hover ~ .ribbon-wrapper {
+			.not-touch .photo:hover ~ .ribbon-wrapper {
 				-webkit-transform: translateY(-2em);
 			}
+
+
 
 			.come-in {
 			  -webkit-transform: translateY(150px);
@@ -251,7 +259,7 @@
   <ul>
   {% for drop in site.data.drops %}
     <li class="module">
-      <p><time datetime="{{ drop.date }}">{{ drop.date | date_to_string }}</time></p>
+      <p class="date-wrapper"><time datetime="{{ drop.date }}">{{ drop.date | date_to_string }}</time></p>
       <a class="photo" href="{{ drop.instagramUrl }}" id="{{ drop.beer | replace: ' ', '_' }}">
         <img src="{{ drop.instagramUrl }}/media/?size=t" />
       </a>

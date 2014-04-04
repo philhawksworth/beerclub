@@ -35,10 +35,17 @@ var isTouch = function() {
 };
 var isScrolled = $('body').scrollTop() > 0 ? true : false;
 
+if(isTouch()) {
+	$('html').addClass('is-touch');
+} else {
+	$('html').addClass('not-touch');
+}
+
 if(!isTouch() && !isScrolled ) {
 
 	allMods.each(function(i, el) {
 	  var el = $(el);
+	  var ribbon = $('.ribbon-wrapper');
 	  if (el.visible(true)) {
 	    el.addClass("already-visible");
 	  }
@@ -53,5 +60,4 @@ if(!isTouch() && !isScrolled ) {
 	    }
 	  });
 	});
-
 }
