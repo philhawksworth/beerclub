@@ -261,7 +261,7 @@
     <li class="module">
       <p class="date-wrapper"><time datetime="{{ drop.date }}">{{ drop.date | date_to_string }}</time></p>
       <a class="photo" href="{{ drop.instagramUrl }}" id="{{ drop.beer | replace: ' ', '_' }}">
-        <img src="{{ drop.instagramUrl }}/media/?size=t" />
+        <img src="{% if drop.instagramUrl %}{{ drop.instagramUrl }}/media/?size=t{% else %}bottle.png{% endif %}" />
       </a>
       {% if drop.award %}
     	<div class="ribbon-wrapper">
