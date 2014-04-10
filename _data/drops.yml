@@ -1,9 +1,17 @@
-- date: 2014-04-10 17:30:00 +0000
+- date: 2014-04-17 17:30:00 +0000
   beer: "???"
-  brewery: "???"
-  member: "andyhawkes"
+  brewery: "Brew by Numbers, London, UK"
+  member: "andyshora"
   description: "???"
-  instagramUrl: 
+  instagramUrl:
+
+- date: 2014-04-10 17:30:00 +0000
+  beer: "Barley Champagne"
+  brewery: "Beavertown, London, UK"
+  member: "andyhawkes"
+  description: "French saison with bramley apple tartness"
+  instagramUrl: http://instagram.com/p/mnclZ0Sadn
+  award: "Giggle inducer"
 
 - date: 2014-03-27 17:30:00 +0000
   beer: "Original Colonies Mead"
