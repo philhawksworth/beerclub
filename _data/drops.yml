@@ -1,9 +1,9 @@
 - date: 2014-04-17 17:30:00 +0000
-  beer: "???"
+  beer: "Amarillo & Nelson"
   brewery: "Brew by Numbers, London, UK"
   member: "andyshora"
-  description: "???"
-  instagramUrl:
+  description: "A light and crisp beer with an assertive hop character."
+  instagramUrl: http://instagram.com/p/m5Ui3gyaQq
 
 - date: 2014-04-10 17:30:00 +0000
   beer: "Barley Champagne"
@@ -19,7 +19,6 @@
   member: "philhawksworth"
   description: "Light citrus mead with notes of honey and champagne yeasts"
   instagramUrl: http://instagram.com/p/mDlCm9yaS0
-  award: "Best flavour"
 
 - date: 2014-03-20 17:30:00 +0000
   beer: "Zinnebir & Taras Boulba"
@@ -34,7 +33,7 @@
   member: "grantygrant"
   description: "Crisp, subtly citrus and refreshing, And smooth yet punchy"
   instagramUrl: http://instagram.com/p/lfcrahSaQc
-  award: "Amazing package"
+  award: "Double header"
 
 - date: 2014-03-06 17:30:00 +0000
   beer: Orange I.P.A
@@ -106,6 +105,7 @@
   member: peduarte
   description: "Organic Ale brewed with yerba mate, hibiscus flowers & bay leaves. An acquired taste..."
   instagramUrl: http://instagram.com/p/f22inVtTUP
+  award: "Flowery water"
 
 - date: 2013-10-17 17:30:00 +0000
   beer: Brooklyn Local 2
