@@ -1,3 +1,11 @@
+- date: 2014-04-24 17:30:00 +0000
+  beer: "Cream Ale"
+  brewery: "Mikkeller, Copenhagen, Denmark"
+  member: "philhawksworth"
+  description: "Body of an ale, lightness of a pilsner."
+  instagramUrl: http://instagram.com/p/nLgcwLSaRZ
+  award: "OCH debut beer"
+
 - date: 2014-04-17 17:30:00 +0000
   beer: "Amarillo & Nelson"
   brewery: "Brew by Numbers, London, UK"
@@ -55,7 +63,6 @@
   member: "Zimon14"
   description: "Powerful dark ale"
   instagramUrl: http://instagram.com/p/kXXH8zNTWO
-  award: "Worst beer"
 
 - date: 2014-02-06 17:30:00 +0000
   beer: Voodoo Doughnut
