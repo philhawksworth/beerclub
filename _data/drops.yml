@@ -1,3 +1,11 @@
+- date: 2014-07-17 16:30:00 +0000
+  beer: "Grand Cru"
+  brewery: "Rodenbach"
+  member: "grantygrant"
+  description: "#rgabeerclub's first sour beer - face-puckeringly sour, but balanced by a sweeter finish"
+  instagramUrl: http://instagram.com/p/qjyLPltTQG
+  award: "First sour beer"
+
 - date: 2014-06-27 16:30:00 +0000
   beer: "Longhaul IPA"
   brewery: "Mircea's home brewery"
@@ -13,7 +21,7 @@
   description: "Punchy full bodied IPA, served thoroughly chilled."
   instagramUrl: http://instagram.com/p/oWE0E5yabL
   award: "Photography by Tony"
-  
+
 - date: 2014-04-24 17:30:00 +0000
   beer: "Cream Ale"
   brewery: "Mikkeller, Copenhagen, Denmark"
