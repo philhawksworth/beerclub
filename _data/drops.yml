@@ -1,4 +1,12 @@
-- date: 2015-02-13 17:30:00 +0000
+- date: 2015-02-19 17:00:00 +0000
+  beer: "P1"
+  brewery: "Mikkeller, Copenhagen, Denmark"
+  member: "taichikozaki"
+  description: "A delightfully balanced hoppy pilsner"
+  instagramUrl: https://instagram.com/p/zX8qL7Tf_v
+  award: "#Restockening Part II"
+
+- date: 2015-02-13 17:00:00 +0000
   beer: "Hellhound IPA"
   brewery: "Clarkshaws"
   member: "andyshora"
@@ -6,12 +14,20 @@
   instagramUrl: http://instagram.com/p/zAsH-kzf0y
   award: "Highest Attendance (9)"
 
-- date: 2014-10-02 16:30:00 +0000
+- date: 2015-01-31 17:30:00 +0000
+  beer: "Moor Hoppiness"
+  brewery: "Moor Beer Co"
+  member: "philhawksworth"
+  description: "Malty and fruity, with the crispness of a Pale Ale"
+  instagramUrl: http://instagram.com/p/zAsH-kzf0y
+  award: "Most Hoppy"
+
+- date: 2014-10-02 17:30:00 +0000
   beer: "Zeitgeist"
   brewery: "BrewDog"
   member: "andyhawkes"
   description: "Re-booting the #rgabeerclub with a project-relevant beer. Welcome to the world of Black Lager!"
-  instagramUrl: http://instagram.com/p/tqEcaUzf3j
+  instagramUrl: https://instagram.com/p/ycrqyrzfym
   award: "First black lager"
 
 - date: 2014-07-17 16:30:00 +0000
