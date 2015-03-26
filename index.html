@@ -24,7 +24,7 @@
       background: #d73939;
     }
     h1 {
-      margin: 1em 0 0;
+      margin: 1em 0 0.5em;
       font-size: 3em;
       text-shadow: -3px 7px rgba(0,0,0,0.2);
     }
@@ -67,6 +67,17 @@
         margin: 0.5em;
         line-height: 1.2em;
       }
+
+    ul.chapters {
+      list-style: none;
+      background: none;
+      margin: 1 0px auto 10px;
+    }
+
+    ul.chapters li {
+      display:inline;
+      margin:0 1em;
+    }
 
     a:link,
     a:visited {
@@ -250,6 +261,10 @@
 <body>
   <header>
     <h1>#BEERCLUB</h1>
+    <ul class="chapters">
+      <li>London chapter</li>
+      <li><a href="http://mirceageorgescu.github.io/beerclub/">Bucharest chapter</a></li>
+    </ul>
     <h2>rules</h2>
     <ol class="rules">
       <li>You do not talk about beer club.</li>
