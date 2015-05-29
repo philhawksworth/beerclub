@@ -17,11 +17,11 @@
       padding: 0;
     }
     body {
-      border-top: solid 20px #981c21;
+      border-top: solid 20px #2c6649;
       font: 16px/1.2em normal "Lato", "Helvetica Neue", "Arial", sans-serif;
       text-align: center;
       color: #fff;
-      background: #d73939;
+      background: #3C8963;
     }
     h1 {
       margin: 1em 0 0.5em;
@@ -39,9 +39,9 @@
       padding: 1em 2.8em;
       font-size: 0.8em;
       color:#fff;
-      background: #d73939;
+      background: #3C8963;
       border-radius: 15px;
-      box-shadow: 0 10px 0 0 #981c21;
+      box-shadow: 0 10px 0 0 #2c6649;
       list-style-position: inside;
       text-indent: -1em;
     }
@@ -54,14 +54,28 @@
     ul {
       margin:0 2em;
       padding: 0.1em 0;
-      background: #d73939 url('./stripe.gif') 50% repeat-y;
+      background: #3C8963;
+      position: relative;
+    }
+
+    ul:after {
+      background: #2c6649;
+      bottom: 0;
+      content: '';
+      display: block;
+      left: 50%;
+      margin-left: -5px;
+      position: absolute;
+      top: 0;
+      width: 10px;
+      z-index: 1;
     }
       ul li {
         margin: 6em 0;
         padding: 0;
         list-style: none;
         position: relative;
-        z-index: 1;
+        z-index: 2;
       }
       ul li p {
         margin: 0.5em;
@@ -74,6 +88,10 @@
       margin: 1 0px auto 10px;
     }
 
+    ul.chapters:after {
+      display: none;
+    }
+
     ul.chapters li {
       display:inline;
       margin:0 1em;
@@ -81,18 +99,18 @@
 
     a:link,
     a:visited {
-      color:#ff9ea9;
-      color:#ff8f8c;
+      /* lighten 30% */
+      color:#90ceaf;
       text-decoration: none;
       padding-bottom: 0.3em;
-      border-bottom: solid 1px #ff8f8c;
+      border-bottom: solid 1px #90ceaf;
     }
     a:hover,
     a:focus {
       color:#fff;
     }
       a.photo img {
-        background-color: #d73939;
+        background-color: #3C8963;
       }
 
     a.photo {
@@ -100,7 +118,7 @@
       display: inline-block;
     }
     a.photo:hover img {
-      background-color: #981c21;
+      background-color: #2c6649;
     }
 
 		.date-wrapper {
@@ -109,7 +127,7 @@
 
     time {
       background: #fff;
-      color:#d73939;
+      color:#3C8963;
       padding:0.2em 0.5em;
       border-radius: 3px
     }
@@ -118,7 +136,8 @@
       font-size: 1.4em;
     }
       .drop span {
-        color: #8b191f;
+        /* 20% darken */
+        color: #1d4230;
       }
 
     img {
@@ -140,8 +159,8 @@
     }
       footer a:link,
       footer a:visited {
-        color: #981c21;
-        border-color: #981c21;
+        color: #2c6649;
+        border-color: #2c6649;
       }
       footer a:hover,
       footer a:focus {
@@ -158,7 +177,7 @@
 				 position: relative;
 				 display: block;
 				 background: white;
-				 color: #d73939;
+				 color: #3C8963;
 				 -webkit-box-sizing: border-box;
 				 min-width: 160px;
 				 height: 40px;
@@ -262,9 +281,9 @@
   <header>
     <h1>#BEERCLUB</h1>
     <ul class="chapters">
-      <li>London chapter</li>
+      <li><a href="http://beerclub.hawksworx.com/">London chapter</a></li>
       <li><a href="http://mirceageorgescu.github.io/beerclub/">Bucharest chapter</a></li>
-      <li><a href="http://taylor-l-beach.github.io/beerclub">Portland chapter</a></li>
+      <li>Portland chapter</li>
     </ul>
     <h2>rules</h2>
     <ol class="rules">
@@ -273,6 +292,9 @@
     </ol>
   </header>
   <ul>
+  {% if site.data.drops.length == 0 %}
+    <li>Oops! Seems like we're about to get drunk soon.</li>
+  {% endif %}
   {% for drop in site.data.drops %}
     <li class="module">
       <p class="date-wrapper"><time datetime="{{ drop.date }}">{{ drop.date | date_to_string }}</time></p>
@@ -293,8 +315,8 @@
   {% endfor %}
   </ul>
   <footer>
-    <p>#beerclub takes place each thursday afternoon at <a href="http://rga.com">R/GA London</a></p>
-    <p>Update this site on <a href="https://github.com/philhawksworth/beerclub/blob/gh-pages/_data/drops.yml">Github</a></p>
+    <p>#beerclub takes place each Friday afternoon during status <a href="http://rga.com">R/GA PDX</a></p>
+    <p>Update this site on <a href="https://github.com/taylor-l-beach/beerclub/blob/gh-pages/_data/drops.yml">Github</a></p>
   </footer>
 
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
