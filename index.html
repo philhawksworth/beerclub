@@ -292,7 +292,7 @@
     </ol>
   </header>
   <ul>
-  {% if site.data.drops.length == 0 %}
+  {% if site.data.drops == null %}
     <li>Oops! Seems like we're about to get drunk soon.</li>
   {% endif %}
   {% for drop in site.data.drops %}
