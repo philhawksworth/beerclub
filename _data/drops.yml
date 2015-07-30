@@ -1,8 +1,19 @@
+
+
+- date: 2015-07-30 17:00:00 +0000
+  beer: "White Cloud IPA"
+  brewery: "Wiper and True, Bristol, UK"
+  member: "andreacvb"
+  description: "Hints of orange blossom and strawberry. According to Dom."
+  instagramUrl: https://instagram.com/p/3hAjFKSacU
+  award: "A yummy wolf in sheep's clothing"
+
+
 - date: 2015-03-19 17:00:00 +0000
   beer: "07|01 Witbier Classic"
-  brewery: "Brew By Numbers, London"
+  brewery: "Brew By Numbers, London, UK"
   member: "cris_mascort"
-  description: "Belgian yeast,cCoriander, orange peel and chamomile flowers"
+  description: "Belgian yeast, coriander, orange peel and chamomile flowers"
   instagramUrl: https://instagram.com/p/0dQD_kSaUE
   award: "Properly drinkable"
 
