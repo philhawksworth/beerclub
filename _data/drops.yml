@@ -1,4 +1,10 @@
-
+- date: 2015-10-08 17:00:00 +0000
+  beer: "Syd Strong's Cascadian Dark Rye Ale"
+  brewery: "Pressure Drop, London, UK"
+  member: "andyhawkes"
+  description: "Dark and chewy. A bit too much for Dom..."
+  instagramUrl: https://instagram.com/p/8lTEIotTY2
+  award: "Punch it, Chewie!"
 
 - date: 2015-07-30 17:00:00 +0000
   beer: "White Cloud IPA"
